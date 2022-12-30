@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #ccc;
+}
+
+/* Fill screen and center text */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Fill screen and center text */
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Invert colors */
+  background: #333;
+  color: #fff;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Sticky left side nav bar, stack items vertically */
+.nav {
+  position: sticky;
+  float: left;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make buttons a small circle */
+.nav-button {
+  margin: .33vw;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+/* Active button is a different color */
+.nav-button.active {
+  background: #222;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

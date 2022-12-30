@@ -1,0 +1,42 @@
+<!-- Metadata -->
+<head>
+  <title>hunters-host</title>
+</head>
+
+<!-- Page Layout -->
+<body>
+  <div id="layout">
+    {{> nav}}
+    {{> home}}
+    {{> about}}
+    {{> contact}}
+  </div>
+</body>
+
+<!-- Templates -->
+<template name="nav">
+  <!-- Buttons to scroll to other divs -->
+  <div class="nav">
+    <div class="nav-button active" id="home-button"></div>
+    <div class="nav-button" id="about-button"></div>
+    <div class="nav-button" id="contact-button"></div>
+  </div>
+</template>
+
+<template name="home">
+  <div class="home" id="home">
+    <canvas id="c"></canvas>
+  </div>
+</template>
+
+<template name="about">
+  <div class="about" id="about">
+    <h1>About</h1>
+  </div>
+</template>
+
+<template name="contact">
+  <div class="contact" id="contact">
+    <h1>Contact</h1>
+  </div>
+</template>
