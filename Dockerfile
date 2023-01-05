@@ -1,0 +1,1 @@
+FROM --platform=linux/arm/v7 ardere/meteor-launchpad:latest

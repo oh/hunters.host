@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  app:
+    image: ardere/hunters.host
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    environment:
+      - ROOT_URL=http://hunters.host
+      - MONGO_URL=mongodb://mongo:27017/meteor
+
+  mongo:
+    image: mongo:latest
+    command: mongod --storageEngine=wiredTiger
