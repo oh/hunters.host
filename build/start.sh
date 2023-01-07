@@ -1,1 +1,0 @@
-tar -xf hunters.host.tar.gz
